@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Exclusivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navegación -->
+    <header>
+        <div class="logo">Atelier</div>
+        <nav>
+            <ul>
+                <li><button data-key="navHome">Inicio</button></li>
+                <li><button data-key="navProducts">Productos</button></li>
+                <li><button data-key="navAbout">Sobre nosotros</button></li>
+                <li><button data-key="navContact">Contacto</button></li>
+            </ul>
+        </nav>
+        <div class="lang-switch">
+            <button id="es">ES</button>
+            <button id="en">EN</button>
+            <button id="gl">GL</button>
+        </div>
+    </header>
 
+    <!-- Sección Inicio -->
+    <section id="home" class="section">
+        <h1 data-key="homeTitle">Bienvenido a Atelier</h1>
+        <p data-key="homeDesc">Productos de lujo diseñados para ti.</p>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="products" class="section">
+        <h2 data-key="productsTitle">Nuestros Productos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Producto 1">
+                <h3 data-key="prod1Name">Producto 1</h3>
+                <p data-key="prod1Desc">Descripción del producto 1.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Producto 2">
+                <h3 data-key="prod2Name">Producto 2</h3>
+                <p data-key="prod2Desc">Descripción del producto 2.</p>
+            </div>
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Producto 3">
+                <h3 data-key="prod3Name">Producto 3</h3>
+                <p data-key="prod3Desc">Descripción del producto 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about" class="section">
+        <h2 data-key="aboutTitle">Sobre Atelier</h2>
+        <p data-key="aboutDesc">Atelier es una marca de lujo comprometida con la calidad y la exclusividad de cada producto.</p>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section">
+        <h2 data-key="contactTitle">Contacto</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit" data-key="contactBtn">Enviar</button>
+        </form>
+        <p id="formMsg"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Atelier. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
